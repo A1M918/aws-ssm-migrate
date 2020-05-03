@@ -52,10 +52,10 @@ I published that code into a _git_ repository [here](#). Just clone that reposit
 and your `json` file here:
 `const { Parameters } = await require('<YOUR JSON FILE>.json');`
 
-Then Install _ **npm** _ packages by running command `npm install` and run the script by command `npm start`
+Then Install  **npm**  packages by running command `npm install` and run the script by command `npm start`
 
-# AND THAT&'S IT !!!
+# AND THAT'S IT !!!
 
 All of your parameters will start moving one by one. It will take some time depending on your number of parameters saved in \*_.json_ file.
 
-Original Article: 
+Original Article: https://medium.com/@9.one.eight/how-to-migrate-aws-ssm-parameters-e60b0d136805

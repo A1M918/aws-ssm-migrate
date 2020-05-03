@@ -49,6 +49,9 @@ I published that code into a _git_ repository [here](#). Just clone that reposit
 
 `});`
 
+and your `json` file here:
+`const { Parameters } = await require('<YOUR JSON FILE>.json');`
+
 Then Install _ **npm** _ packages by running command `npm install` and run the script by command `npm start`
 
 # AND THAT&'S IT !!!

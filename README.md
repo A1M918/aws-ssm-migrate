@@ -25,6 +25,8 @@ I am assuming that you are already working with AWS and have installed `aws-sdk`
 
 `Λ: aws ssm get-parameters-by-path --path "/" –recursive`
 
+**note: if you are using `SecureString` in your parameters, use additional flag `--with-decryption` in command above to export them correctly**
+
 ![](RackMultipart20200503-4-17emizf_html_d25a8372ef926c22.png)
 
 ## Step #2:

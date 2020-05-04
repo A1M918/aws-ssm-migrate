@@ -6,8 +6,8 @@ const ssm = new AWS.SSM({
 });
 
 
- function migrateParams() {
-  const { Parameters } = await require('<YOUR JSON FILE>.json'); // add your json file here
+ async function migrateParams() {
+  const { Parameters } = await require('./parameters.json'); // add your json file here
 
   for (let i = 0; i < Parameters.length; i++) {
     const params = {

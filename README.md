@@ -23,7 +23,7 @@ So we Googled the problem and we didn't find much. AWS actually doesn't provide 
 
 I am assuming that you are already working with AWS and have installed `aws-sdk`. So you need to run following command to fetch all the parameters in your current region:
 
-`Λ: aws ssm get-parameters-by-path --path "/" -–recursive`
+`Λ: aws ssm get-parameters-by-path --path "/" --recursive`
 
 **note: if you are using `SecureString` in your parameters, use additional flag `--with-decryption` in command above to export them correctly**
 

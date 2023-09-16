@@ -1,8 +1,10 @@
-const AWS = require('aws-sdk')
+const {
+  SSM
+} = require("@aws-sdk/client-ssm")
 
-const ssm = new AWS.SSM({
+const ssm = new SSM({
   apiVersion: '2014-11-06',
-  region: 'eu-west-2' // add your destination region here.
+  region: '<YOUR-REGION-HERE>' // add your destination region here.
 });
 
 
@@ -18,7 +20,7 @@ const ssm = new AWS.SSM({
       Description: Parameters[i].Description ? Parameters[i].Description : undefined, // Description, if any.
       Overwrite: true, // Make the parameter to override if it is already there.
     };
-    await ssm.putParameter(params).promise().then(
+    await ssm.putParameter(params).then(
       (data) => {
         console.log(data, {
           Name: Parameters[i].Name,
